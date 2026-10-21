@@ -1,0 +1,325 @@
+/* ========================================================
+   Kalam Amir - Ultra Frosted Glass Edition (Nahj al-Balagha)
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Scheherazade+New:wght@600;700&display=swap');
+
+/* --- استایل کال‌اوت نهج‌البلاغه در یادداشت‌ها --- */
+.callout[data-callout="nahj"] {
+  direction: rtl;
+  text-align: right;
+  border-radius: 20px !important;
+  border: 1px solid rgba(2, 132, 199, 0.35) !important;
+  border-right: 5px solid #0284c7 !important;
+  background: rgba(2, 132, 199, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  padding: 20px 24px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06) !important;
+  margin: 1.6em 0 !important;
+}
+
+.theme-dark .callout[data-callout="nahj"] {
+  background: rgba(14, 27, 45, 0.65) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  border-right-color: #38bdf8 !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.callout[data-callout="nahj"] .callout-title {
+  color: #0284c7 !important;
+  font-family: 'IRANBlack', 'IRANSans Black', Tahoma, sans-serif !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 12px !important;
+}
+
+.theme-dark .callout[data-callout="nahj"] .callout-title {
+  color: #38bdf8 !important;
+}
+
+/* متن عربی با رسم‌الخط اعراب‌دار و خوانا */
+.nahj-arabic-text {
+  font-family: 'Amiri Quran', 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif !important;
+  font-size: 1.55rem !important;
+  line-height: 2.5 !important;
+  letter-spacing: 0.5px !important;
+  color: #0f172a;
+  text-align: center;
+  direction: rtl;
+  margin: 10px 0 16px;
+  padding: 10px 14px 16px;
+  background: linear-gradient(180deg, transparent 96%, rgba(2, 132, 199, 0.3) 100%);
+}
+
+.theme-dark .nahj-arabic-text {
+  color: #f8fafc;
+  background: linear-gradient(180deg, transparent 96%, rgba(56, 189, 248, 0.25) 100%);
+}
+
+/* متن ترجمه فارسی مکارم */
+.nahj-translation-text {
+  font-family: 'IRANSemiBold', 'IRANSans SemiBold', 'IRANSans', Tahoma, sans-serif;
+  font-size: 1.05rem;
+  line-height: 2.15;
+  color: #334155;
+  text-align: justify;
+  padding: 0 6px;
+}
+
+.theme-dark .nahj-translation-text {
+  color: #cbd5e1;
+}
+
+/* --- مودال کریستالی و فوق‌شیشه‌ای --- */
+.nahj-modal-overlay {
+  direction: rtl;
+  font-family: 'IRANSemiBold', 'IRANSans', Tahoma, sans-serif;
+}
+
+.nahj-modal-box {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(32px) !important;
+  -webkit-backdrop-filter: blur(32px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(2, 132, 199, 0.15) !important;
+  padding: 24px 28px !important;
+  max-width: 760px !important;
+  width: 95% !important;
+  transition: all 0.3s ease;
+}
+
+.theme-dark .nahj-modal-box {
+  background: rgba(11, 19, 32, 0.86) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(56, 189, 248, 0.2) !important;
+  color: #f8fafc;
+}
+
+/* هدر شیشه‌ای */
+.nahj-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.nahj-header-title {
+  font-family: 'IRANBlack', Tahoma, sans-serif;
+  font-size: 1.28rem;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 0 2px 8px rgba(2, 132, 199, 0.2);
+}
+
+.theme-dark .nahj-header-title {
+  color: #38bdf8;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+/* تب‌های دسته‌بندی سه‌گانه */
+.nahj-category-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.nahj-tab-pill {
+  flex: 1;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(128, 128, 128, 0.08);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nahj-tab-pill.is-active {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #ffffff !important;
+  border-color: #38bdf8;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+  transform: translateY(-1.5px);
+}
+
+/* ردیف انتخابگر و کادر جستجو */
+.nahj-selector-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.nahj-input-field {
+  height: 46px !important;
+  min-height: 46px !important;
+  box-sizing: border-box !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  border: 1.5px solid rgba(128, 128, 128, 0.22) !important;
+  border-radius: 14px !important;
+  padding: 0 14px !important;
+  font-family: inherit !important;
+  font-size: 0.94rem !important;
+  color: inherit !important;
+  outline: none !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.theme-dark .nahj-input-field {
+  background: rgba(15, 23, 42, 0.65) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+.nahj-input-field:focus {
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3.5px rgba(2, 132, 199, 0.25) !important;
+  transform: translateY(-1px);
+}
+
+.nahj-search-input {
+  flex: 2;
+}
+
+.nahj-number-select {
+  flex: 1.4;
+  cursor: pointer;
+}
+
+/* کارت شیشه‌ای پیش‌نمایش */
+.nahj-preview-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.16);
+  border-radius: 20px;
+  padding: 24px 26px;
+  min-height: 180px;
+  max-height: 360px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.theme-dark .nahj-preview-card {
+  background: rgba(15, 23, 42, 0.45);
+  border-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* نوار ابزار پایینی */
+.nahj-bottom-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.nahj-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nahj-nav-info {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.2);
+  border-radius: 999px;
+  padding: 6px 18px;
+  text-align: center;
+}
+
+.theme-dark .nahj-nav-info {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+.nahj-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.nahj-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* دکمه‌های آیکونی و مدرن */
+.nahj-btn {
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 9px 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nahj-btn-primary {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+}
+
+.nahj-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.5);
+}
+
+.nahj-btn-glass {
+  background: rgba(128, 128, 128, 0.07);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  color: inherit;
+}
+
+.nahj-btn-glass:hover {
+  background: rgba(2, 132, 199, 0.12);
+  border-color: #0284c7;
+  color: #0284c7;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.2);
+}
+
+.nahj-btn-nav {
+  padding: 8px 18px;
+  background: rgba(2, 132, 199, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  color: inherit;
+}
+
+.nahj-btn-nav:hover {
+  background: #0284c7;
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.3);
+}
